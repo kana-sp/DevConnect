@@ -1,5 +1,60 @@
 {
   "extends": "@react-native/typescript-config",
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/node_modules", "**/Pods"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "compilerOptions": {
+    "jsx": "react-native",
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    /* Strict Type-Checking Options */
+    "strict": true /* Enable all strict type-checking options. */,
+    "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+    "strictNullChecks": true /* Enable strict null checks. */,
+    "strictFunctionTypes": true /* Enable strict checking of function types. */,
+    "strictPropertyInitialization": false /* Enable strict checking of property initialization in classes. */,
+    "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
+    "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
+    /* Additional Checks */
+    "noUnusedLocals": true /* Report errors on unused locals. */,
+    "noUnusedParameters": true /* Report errors on unused parameters. */,
+    "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+    "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+    /* Completeness */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "paths": {
+      "@styles": [
+        "./app/_styles"
+      ],
+      "*": [
+        "./app/*"
+      ],
+      "@customs/*": [
+        "./customs/*"
+      ],
+      "@environments/*": [
+        "./environments/*"
+      ],
+      "@images": [
+        "./assets/images"
+      ],
+      "@boot/*": [
+        "./boot/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    /* Experimental Options */
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */
+  },
+  "exclude": [
+    "ios/**/*",
+    "android/**/*",
+    "node_modules/**/*",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    "**/node_modules",
+    "**/Pods"
+  ]
 }
