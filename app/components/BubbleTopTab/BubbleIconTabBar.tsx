@@ -7,7 +7,7 @@ import ViewPressableScale from 'components/PressableScale';
 import { Ionicons } from '@expo/vector-icons';
 import GlobalSvgMEMO from 'components/GlobalSvg';
 import Bubble, { TabLayout } from './Bubble';
-import { runOnJS, runOnUI } from 'react-native-worklets';
+import { runOnJS, runOnUI } from 'react-native-reanimated';
 
 interface Props {
   tabData: any[]

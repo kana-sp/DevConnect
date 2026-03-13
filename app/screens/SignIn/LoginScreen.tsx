@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 
 type Props = {}
 
-const HomeContainer = (props: Props) => {
+const LoginScreen = (props: Props) => {
     return (
         <SafeAreaView>
             <Text>LoginScreen</Text>
@@ -12,7 +12,7 @@ const HomeContainer = (props: Props) => {
     )
 }
 
-export default HomeContainer
+export default LoginScreen
 
 const styles = StyleSheet.create({})
 

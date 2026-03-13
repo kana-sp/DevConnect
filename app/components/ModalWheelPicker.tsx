@@ -6,7 +6,7 @@ import { View, Text, StyleSheet, NativeSyntheticEvent, NativeScrollEvent, ViewSt
 import Animated, { useSharedValue, useAnimatedStyle, interpolate, Extrapolation, SharedValue, scrollTo, useAnimatedRef, } from 'react-native-reanimated';
 import SlideModal, { SlideModalRef } from './SlideModal';
 import { useGlobal } from 'hooks/global.hooks';
-import { runOnJS } from 'react-native-worklets';
+import { runOnJS } from 'react-native-reanimated';
 
 // ─── Fixed dimensions ─────────────────────────────────────────────────────────
 const ITEM_HEIGHT = 44;

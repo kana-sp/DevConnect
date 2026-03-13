@@ -19,25 +19,24 @@ function MyTabs() {
       <Tab.Screen
         name="Home"
         options={{
-          tabBarIcon: { type: 'sfSymbol', name: 'house.fill', },
+          tabBarIcon: { type: 'sfSymbol', name: 'house', },
         }}
         component={HomeContainer}
       />
       <Tab.Screen
-        name="Login"
+        name="SignIn"
         options={{
-          tabBarIcon: { type: 'sfSymbol', name: 'person.fill', },
+          tabBarIcon: { type: 'sfSymbol', name: 'key.2.on.ring', },
         }}
         component={SignInContainer}
       />
       <Tab.Screen
         name="Profile"
         options={{
-          tabBarIcon: { type: 'sfSymbol', name: 'person.crop.circle.fill', },
+          tabBarIcon: { type: 'sfSymbol', name: 'person', },
         }}
         component={ProfileContainer}
       />
-
     </Tab.Navigator>
 
   );

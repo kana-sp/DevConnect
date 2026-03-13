@@ -4,7 +4,7 @@ import LoginScreen from './LoginScreen'
 
 type Props = {}
 
-const HomeContainer = (props: Props) => {
+const LoginContainer = (props: Props) => {
     return (
         <View>
             <LoginScreen />
@@ -12,6 +12,6 @@ const HomeContainer = (props: Props) => {
     )
 }
 
-export default HomeContainer
+export default LoginContainer
 
 const styles = StyleSheet.create({})

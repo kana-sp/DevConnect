@@ -8,7 +8,7 @@ import { fontGSans, FontGSansBold } from '@customs/customFont'
 import HeaderAnimated from 'components/HeaderAnimated'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import images from 'modules/images'
-import { runOnJS } from 'react-native-worklets'
+import { runOnJS } from 'react-native-reanimated'
 import Video from 'react-native-video'
 import convertToProxyURL from 'react-native-video-cache';
 import { GradientText } from './GradientText'

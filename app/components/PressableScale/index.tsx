@@ -1,7 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 import { GestureResponderEvent, TouchableWithoutFeedbackProps, TouchableWithoutFeedback } from 'react-native';
-import Reanimated, { useAnimatedStyle, useSharedValue, withSpring, WithSpringConfig } from 'react-native-reanimated';
-import { scheduleOnUI } from 'react-native-worklets';
+import Reanimated, { runOnUI, useAnimatedStyle, useSharedValue, withSpring, WithSpringConfig } from 'react-native-reanimated';
 import * as ReactNativeHapticFeedback from 'expo-haptics'
 
 export interface PressableScaleProps extends TouchableWithoutFeedbackProps, Partial<Omit<WithSpringConfig, 'mass'>> {
@@ -76,10 +75,10 @@ export default function ViewPressableScale(props: PressableScaleProps): React.Re
 
   const setPressedIn = useCallback(
     (pressed: boolean) => {
-      scheduleOnUI((nextValue: boolean) => {
+      runOnUI((nextValue: boolean) => {
         'worklet';
         isPressedIn.value = nextValue;
-      }, pressed);
+      })(pressed);
     },
     [isPressedIn],
   );
